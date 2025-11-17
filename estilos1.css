@@ -1,0 +1,490 @@
+@font-face{
+font-family:"Hoshiko Satsuki";
+src:url("fuentes/japon.ttf");
+}
+
+body{
+	margin:0;
+	background-image:url("imagenes/fondo-casero.jpg") ;
+	
+	background-position: center center;
+
+	background-repeat: no-repeat;
+
+	background-attachment: fixed;
+
+	background-size: cover;
+}
+
+header{
+	width:100%;
+	height:145px;
+	display:flex;
+	background: linear-gradient(#094ebd, #05152e);
+	justify-content: space-between;
+	align-items: center;
+}
+.index{
+	background: linear-gradient(#7302a1	, #000000);
+}
+.header-parte1{
+	background: linear-gradient(#094ebd, #05152e);
+}
+.header-personajes1{
+	background: linear-gradient(#094ebd, #05152e);
+}
+.header-historia1{
+	background: linear-gradient(#094ebd, #05152e);
+}
+
+	 
+.header-parte2{
+	background: linear-gradient(#4a0d78, #801313);
+}
+.header-personajes2{
+	background: linear-gradient(#4a0d78, #801313);
+}
+.header-historia2{
+	background: linear-gradient(#4a0d78, #801313);
+}
+
+
+.header-parte3{
+    background: linear-gradient(#9ea60a, #383c4a);
+}
+.header-personajes3{
+    background: linear-gradient(#9ea60a, #383c4a);
+}
+.header-historia3{
+    background: linear-gradient(#9ea60a, #383c4a);
+}
+
+
+.header-parte4{
+	background: linear-gradient(#0d99d1, #93bf19);
+}
+.header-personajes4{
+	background: linear-gradient(#0d99d1, #93bf19);
+}
+.header-historia4{
+	background: linear-gradient(#0d99d1, #93bf19);
+}
+
+
+.header-parte5{
+	background: linear-gradient(#d604c7, #350657);
+}
+.header-personajes5{
+	background: linear-gradient(#d604c7, #350657);
+}
+.header-historia5{
+	background: linear-gradient(#d604c7, #350657);
+}
+
+
+.header-parte6{
+	background: linear-gradient(#0a708f, #469e08);
+}
+.header-personajes6{
+	background: linear-gradient(#0a708f, #469e08);
+}
+.header-historia6{
+	background: linear-gradient(#0a708f, #469e08);
+}
+
+
+.header-parte7{
+	background: linear-gradient(#291113, #056b10);
+}
+.header-personajes7{
+	background: linear-gradient(#291113, #056b10);
+}
+.header-historia7{
+	background: linear-gradient(#291113, #056b10);
+}
+
+
+.header-parte8{
+	background: linear-gradient(#3a423b, #6ebcc2);
+}
+.header-personajes8{
+	background: linear-gradient(#3a423b, #6ebcc2);
+}
+.header-historia8{
+	background: linear-gradient(#3a423b, #6ebcc2);
+}
+
+
+/* Logo */
+.logo img {
+	height: 60px;
+}
+
+
+{/* Menú */
+.main-nav ul {
+	list-style: none;
+	display: flex;
+	gap: 20px;
+	padding: 0;
+	margin: 0;
+}
+
+.main-nav a {
+	text-decoration: none;
+	color: #f1c40f;
+	font-weight: bold;
+	font-family: 'Arial Black', sans-serif;
+}
+
+.main-nav a:hover {
+	color: #ffffff;
+	text-shadow: 0 0 5px #f1c40f;
+}
+
+/* Barra de búsqueda */
+.search-container {
+	display: flex;
+	align-items: center;
+	background: white;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.search-input {
+	border: none;
+	padding: 8px 10px;
+	width: 180px;
+	outline: none;
+	font-family: 'Segoe UI', sans-serif;
+}
+
+.search-button {
+	background: #8e2de2;
+	color: white;
+	border: none;
+	padding: 8px 12px;
+	cursor: pointer;
+	transition: background 0.3s ease;
+}
+
+.search-button:hover {
+	background: #732d91;
+}
+}
+
+main{
+	
+}
+
+p{
+	color:#a8adb5				;
+	margin-left:5%;
+	margin-right:5%;
+	
+	
+}
+h1{
+	display:flex;
+	justify-content:center;
+	padding:1%;
+	text-align:center;
+	color:#a8adb5	
+}
+
+h2{
+	display:flex;
+	justify-content:center;
+	padding:2%;
+	font-family:"Hoshiko Satsuki";
+	text-shadow:2px 2px 2px black;
+   	color:yellow;
+}
+h3{
+	display:flex;
+	justify-content:center;
+	text-align:center;
+	font-family:"Hoshiko Satsuki";
+	text-shadow:2px 2px 2px black;
+
+}
+
+footer{
+	width:100%;
+	height:145px;
+	display:flex;
+	background: linear-gradient(#7302a1	, #000000);
+	justify-content: space-evenly;
+
+}
+
+
+nav{
+	width:70%;
+	color:#e0e691;
+	height:auto;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	border-radius:5px;
+}
+
+nav a:link, nav a:visited{
+	width:100%;
+	height:48px;
+	color:#5277b3;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border-radius:10px;
+	font-weight:bold;
+	font-family:sans serif;
+	text-decoration:none;
+	font-size:22px;
+	transition:all 0.5s;
+	text-shadow: 1px 1px 1px black;
+	
+}
+
+nav a:hover{
+   color:white;
+   font-size:24px;
+	
+}
+
+.imagen{
+	height:auto;
+	width:100%;
+	
+}
+
+.imagen img{
+	height:auto;
+	width:100%;
+	
+} 
+
+.logo{
+	width:10%;
+	height:auto;
+	margin-top:auto;
+}
+.video-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 56.25%; /* relación 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+  background: #000;
+}
+
+.video-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.nombre{
+color:black;
+}
+
+.opening{
+	margin:auto;
+	display:flex;
+	align-items: center;
+	flex-direction: column;
+	padding:1%;
+}
+
+.portadas{
+	height:auto;
+	width:auto;
+	margin:auto;
+	display:flex;
+	flex-direction:row;
+	justify-content: space-around;
+	padding:1%;
+}
+
+.titulo-portada{
+	display:flex;
+	justify-content: space-around;
+	padding:2%;
+}
+
+.portaditas{
+	display:flex;
+	align-items:center;
+	flex-direction:column;
+	padding:3%;
+}
+
+.titulos{
+	display:flex;
+	justify-content:center;
+	padding:2%;
+}
+
+.parrafo{
+	padding-left:2%;
+	padding-right:2%;
+}
+
+.parrafo h2{
+	text-align:center;
+}
+
+
+
+
+.targetas{
+	    display:flex;
+		flex-direction:column;
+		flex-direction:row;
+		justify-content:space-evenly;
+
+		
+    }
+.tarjeta{
+		 width:40%;
+	     height:auto;
+		 padding:3%;
+		 border-style:ridge;
+		border-width:2px;
+		border-color:gray;
+		border-radius:18px;
+		
+	}
+    
+.texto{
+		width:100%;
+		height:auto;
+		margin:auto;
+		display:flex;
+		align-content:center;
+		flex-direction:column;
+}
+.imagenes img{
+	width:100%;
+	height:auto;
+}
+.red img{
+	width:50%;
+	height:auto;
+}
+.red{
+	width:5%;
+	height:auto;
+}
+.contacto {
+    display: flex;
+    width: 96%;
+    height: auto;
+    padding: 2%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.jojo{
+	color:#a136ad;
+	font-size:40px;
+	font-family:"Hoshiko Satsuki";
+	text-shadow:2px 2px 2px black;
+}
+.Bizarre-Adventure{
+	color:#d91616;
+	font-size:40px;
+	text-shadow:2px 2px 2px black;
+	font-family:"Hoshiko Satsuki";
+}
+	
+.pad{
+	padding-top:0;
+}
+
+.color{
+		color:#e0e691;
+		font-family:"Hoshiko Satsuki";
+		text-shadow:2px 2px 2px black;
+
+}
+
+.lista-personajes{
+	    color:#a9abaa;
+}
+
+@media screen and (max-width:800px)
+{
+	header{
+		flex-direction:column;
+		width:auto;
+		height:auto;
+	}
+	
+	.logo{
+		width:90%;
+		margin:auto;
+	}
+	
+	nav{
+		flex-direction:column;
+	}
+	
+	main{
+		height:auto;
+		width:100%;
+	}
+	
+    .targetas {
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+		width:100%;
+		height:auto;
+    }
+	
+	.tarjeta{
+		 width:90%;
+	     height:auto;
+		 padding:2%;
+		 flex-direction:row;
+		 justify-content:space-around;
+		 margin-bottom:20px;
+	}
+    
+	.texto{
+		width:100%;
+		height:auto;
+		margin:auto;
+		display:flex;
+		align-content:center;
+		flex-direction:column;
+
+	}
+	
+    .imagenes{
+		width:100%;
+		height:auto;
+	}
+	
+	.imagenes img{
+		width:100%;
+		height:auto;
+	}
+	
+	.red img{
+		width:100%;
+		height:auto;
+	}
+	.red{
+		width:10%;
+		height:auto;
+	}
+	
