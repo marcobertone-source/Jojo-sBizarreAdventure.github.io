@@ -213,8 +213,9 @@ footer{
 	width:100%;
 	height:145px;
 	display:flex;
-	background: linear-gradient(#7302a1	, #000000);
+	background:linear-gradient(#d91616, #8c077f);
 	justify-content: space-evenly;
+	margin-top:50px;
 
 }
 
@@ -348,7 +349,7 @@ color:black;
 		flex-direction:column;
 		flex-direction:row;
 		justify-content:space-evenly;
-
+        flex-wrap:wrap;
 		
     }
 .tarjeta{
@@ -359,7 +360,7 @@ color:black;
 		border-width:2px;
 		border-color:gray;
 		border-radius:18px;
-		
+		margin-bottom:20px;
 	}
     
 .texto{
@@ -387,9 +388,9 @@ color:black;
     width: 96%;
     height: auto;
     padding: 2%;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-end;
+	align-content: center;
+    align-items: center;
+	justify-content: space-evenly;
 }
 .jojo{
 	color:#a136ad;
@@ -418,6 +419,46 @@ color:black;
 .lista-personajes{
 	    color:#a9abaa;
 }
+
+.footer-image{
+		width:9%;
+		height:auto;
+		display:flex;
+		border-radius:15px;
+	}
+	
+.footer-image2{
+	    width:6.5%;
+		height:auto;
+		display:flex;
+		border-radius:15px;
+	
+}
+
+.personajes-images{
+	display:flex;
+	width:100%;
+	height:auto;
+	align-items:center;
+	justify-content: center;
+	text-align:justify;
+}
+
+.image{
+	width:20%;
+	height:auto;
+}
+.image img{
+	width:100%;
+	height:auto;
+	
+}
+
+.textou{
+	width:45%;
+	height:auto;
+}
+
 
 @media screen and (max-width:800px)
 {
@@ -488,3 +529,24 @@ color:black;
 		height:auto;
 	}
 	
+    .footer-image{
+		width:13%;
+		height:auto;
+		display:flex;
+		border-radius:10px;
+	}
+}
+	.nosotros{
+		font-size:20px;
+		color:white;
+	font-family: 'Segoe UI', sans-serif;
+
+	}
+	.info{
+		 width:90%;
+	     height:auto;
+		 padding:2%;
+		 flex-direction:row;
+		 justify-content:space-around;
+		 margin-bottom:20px;
+		 

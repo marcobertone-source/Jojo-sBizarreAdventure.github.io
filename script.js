@@ -1,46 +1,33 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const overlay = document.getElementById('transition-overlay');
-    const video = document.getElementById('transition-video');
-    const links = document.querySelectorAll('.transicion-activa');
-    if (!overlay) return;
+document.addEventListener("DOMContentLoaded", () => {
+  const video = document.getElementById("intro-video");
 
-    /*
-    * PARTE 1: Transición de SALIDA (al hacer clic en un enlace)
-    */
-    links.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault(); 
-            const destination = link.href;
+  document.querySelectorAll("a.nav-link, a.dropdown-item").forEach(link => {
+    link.addEventListener("click", e => {
+      if (link.hasAttribute("data-bs-toggle")) return;
 
-            overlay.classList.add('active');
-            
-            if (video) {
-                video.currentTime = 0;
-                video.play();
-                
-                video.onended = () => {
-                    window.location.href = destination;
-                };
-            } else {
-                 setTimeout(() => {
-                    window.location.href = destination;
-                 }, 1000); 
-            }
-        });
+      const href = link.getAttribute("href");
+      if (!href || href.startsWith("#")) return;
+
+      e.preventDefault();
+
+      video.currentTime = 0;
+      video.style.opacity = 1;
+      video.play();
+
+      video.onended = () => {
+        window.location.href = href;
+      };
     });
+  });
+});
 
-    /*
-    * PARTE 2: Transición de ENTRADA (al cargar la página nueva)
-    */
-    if (overlay.classList.contains('active')) {
-        overlay.style.opacity = '1'; 
-        
-        setTimeout(() => {
-            overlay.classList.remove('active');
-            
-            if (video) {
-                video.pause();
-            }
-        }, 300);
-    }
+document.querySelector(".logo")?.addEventListener("click", e => {
+  e.preventDefault();
+  const video = document.getElementById("intro-video");
+  video.currentTime = 0;
+  video.style.opacity = 1;
+  video.play();
+  video.onended = () => {
+    window.location.href = "index.html";
+  };
 });
